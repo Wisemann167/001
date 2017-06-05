@@ -5,6 +5,8 @@
 }
 
 html{
+	width:100vw;
+	max-width:100%;
 	font-family: "Ubu";
 	color:white;
 	width:100%;
@@ -12,7 +14,7 @@ html{
 
 
 #pudelko{
-	margin: 0 auto; 
+	margin: auto; 
 	width:90%;
 	text-align:center;
 	background-color:#3a3536;
