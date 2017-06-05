@@ -1,0 +1,229 @@
+﻿ <html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="logo.svg">
+<meta name="author" content="//HEI-HIKO" />
+<meta name="description" content="Front End | RC-001">
+<meta name="viewport" content="initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0;"/>
+<link rel="stylesheet" href=" https://www.w3schools.com/w3css/4/w3.css"/>
+<link rel="stylesheet" type="text/css" href="styl.css">
+<title>Front End | Team Fortress 2</title>
+
+
+</head>
+<body>
+<div class=container-fluid>
+<div id=pudelko>
+<div id=slider>
+
+<div>
+<!--Baner -->
+	<div id=banner>
+	
+<div id=logo><img src=logo.svg width=100px></div><div id=top-menu>
+<!--Przyciski od menu -->
+<button onClick=showDiv('Klasy','b1') id=b1 >Klasy</button>
+<button onClick=showDiv('Tryby','b2') id=b2>Tryby gry</button>
+<button onClick=showDiv('Bron','b3') id=b3>Uzbrojenie</button>
+<div id=lupa>	<a href=#><img src=search.png class=fl title="Ikona autorstwa Situ Herrera" ></a></div>
+</div>
+<!--Poszczegolne pod menu, kazdy w wlasnym id, wszystkie z klasa my-bar -->
+		<div id=Klasy class=my-bar>	<ul>
+			<li>Skaut
+			<li>Żołnierz
+			<li>Pyro
+			<li>Demoman
+			<li>Gruby
+			<li>Inżynier
+			<li>Medyk
+			<li>Snajper
+			<li>Szpieg</li></ul>
+		<div id=cross><a onClick=hideDiv('Klasy','b1')><img src=cross.png class=w3-display-right title="Ikona autorstwa Situ Herrera"> </a></div></div>
+		
+		<div id=Tryby class=my-bar>	<ul class=w3-display-container>
+			<li>Zdobądź flagę
+			<li>Punkt Kontrolny
+			<li>Atak/Obrona
+			<li>Król Wzgórza
+			<li>Ładunek</li></ul>
+		<div id=cross><a onClick=hideDiv('Tryby','b2')><img  src=cross.png class=w3-display-right title="Ikona autorstwa Situ Herrera"></a></div></div>
+		
+		<div id=Bron class=my-bar>	<ul>
+			<li>Podstawowa
+			<li>Pomocnicza
+			<li>Do walki wręcz
+			<li>PDA
+			<li>PDA 2</li></ul>
+		<div id=cross><a onClick=hideDiv('Bron','b3')><img src=cross.png class=w3-display-right title="Ikona autorstwa Situ Herrera"></a></div></div>	
+
+	</div>
+<!--Slider-->
+		<!--1-->
+		<div id=slider-box>
+		<div class="mySlides">
+	<img src="slider-img/1.png" class=slider-img>
+	<div class="w3-display-left w3-container w3-padding-16 ">
+    <div id=slider-tytul>2Fort</div> <a href=https://wiki.teamfortress.com/wiki/2Fort/pl><i>(ctf_2fort)</i></a> <div id=slider-opis>2Fort jest mapą do trybu gry Capture The Flag i kolejną odsłoną mapy z Team Fortress Classic, która posiadała tą samą nazwę. 2Fort jest pierwszą oficjalną mapą CTF do Team Fortress 2 i jest jedną z sześciu pierwszych map w TF2. </div>	</div>
+		</div>
+		<!--2-->
+		<div class="mySlides">
+	<img src="slider-img/2.png"	class=slider-img>
+	<div class="w3-display-left w3-container w3-padding-16 ">
+    <div id=slider-tytul>Badwater Basin</div><a href=https://wiki.teamfortress.com/wiki/Badwater_Basin/pl><i>(pl_badwater)</i></a><div id=slider-opis>Badwater Basin jest jednoetapową mapą typu Ładunek z czterema punktami kontrolnymi do zdobycia przez drużynę BLU. Jest to wielka kotlina, która przechodzi w wąski korytarz stworzony z budynków </div>	</div>
+		</div>
+		<!--3-->
+		<div class="mySlides">
+	<img src="slider-img/3.png"	class=slider-img>
+	<div class="w3-display-left w3-container w3-padding-16 ">
+    <div id=slider-tytul>Double Cross</div><a href=https://wiki.teamfortress.com/wiki/Double_Cross/pl><i>(ctf_doublecross)</i></a><div id=slider-opis>Doublecross jest dynamiczną mapą, która obiecuje wiele zwrotów akcji, walka koncentruje się na głównych mostach i wielu sposobach, aby spaść z niego (lub sprawieniu, aby inni spadli). Poniżej znajduje się most kolejowy, który jest idealny dla podstępnych klas i zawiera szereg tajnych tuneli. </div>	</div>
+		</div>
+		<!--4-->
+		<div class="mySlides">
+	<img src="slider-img/4.png"	class=slider-img>
+	<div class="w3-display-left w3-container w3-padding-16 ">
+    <div id=slider-tytul>Turbine</div><a href=https://wiki.teamfortress.com/wiki/Turbine/pl><i>(ctf_turbine)</i></a><div id=slider-opis>Turbine jest mapą typu Zdobądź flagę wydaną oficjalnie razem z Aktualizacją Pyro. To właśnie ona i Fastlane zostały pierwszymi mapami stworzonymi przez społeczność i wybrane przez Valve jako oficjalne ze względu na ich wyróżniającą się jakość.</div>	</div>
+		</div>
+		<!--5-->
+		<div class="mySlides">
+	<img src="slider-img/5.png"	class=slider-img>
+	<div class="w3-display-left w3-container w3-padding-16 ">
+    <div id=slider-tytul>Upward</div><a href=https://wiki.teamfortress.com/wiki/Badlands_(Control_Point)/pl><i>(pl_upward)</i></a><div id=slider-opis>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. </div>	</div>
+		</div>
+
+	
+	<!--Nawigacja slidera 
+	Do każdego kolejnego slajdu trza dorobic kropke 	-->
+   <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-middle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div></div>
+	 <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+	 <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+	 <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+  </div>
+</div>
+  <!-- A hrefy, 4x25  wymiary 480x480-->
+
+			<!--1.-->
+		<div id=bot-img style="background-color:rgba(236, 240, 241, 1);">
+		<a href=https://scrap.tf/>
+		<img src=bot-img/sp.png >
+			<div id=overlay>		<div id=bot-text>
+		Społeczność oraz <br>system wymiany <br>przedmiotów 
+		<hr>TF2 | CS:GO | Dota2		</div>
+			</div>
+		</a>
+		</div>
+		
+			<!--2.-->
+		<div id=bot-img style="background-color:rgba(93, 121, 143, 1);">
+		<a href=https://www.backpack.tf/>
+		<img src=bot-img/bp.png >
+			<div id=overlay>		<div id=bot-text>
+		Wymiana<br>przedmiotów
+		<hr>TF2 | CS:GO | Dota 2	</div>
+			</div>
+		</a>
+		</div>
+		
+			<!--3.-->
+		<div id=bot-img style="background-color:rgba(37, 36, 33, 1);">	
+		<a href=http://www.tf2outpost.com/>
+		<img src=bot-img/op.png >
+			<div id=overlay>		<div id=bot-text>
+		Tablica ogłoszeń<br>wymiany
+		<hr>TF2 | CS:GO | Dota 2</div>
+			</div>
+		</a>
+		</div> 
+			<!--4.-->
+		<div id=bot-img style="background-color:rgba(23, 26, 33, 1);">	
+		<a href=http://store.steampowered.com/>
+		<img src=bot-img/st.png >
+			<div id=overlay>		<div id=bot-text >
+		Platforma dystrybucji<br>cyfrowej i zarządzania<br>prawami cyfrowymi<br>stworzony przez<br>Valve Corporation.	</div>
+		</div>
+		</a>
+	</div>
+
+			</div>
+			<!-- Brazowy pasek -->
+			
+			<div id=pasek>
+			<div id=ic-left><a href=#><img src=ico-img/fb.svg></a>
+				<a href=#><img src=ico-img/ig.svg></a>
+				<a href=#><img src=ico-img/tr.svg></a></div>
+			
+			
+			<div id=btn-rds>Dołącz do nas już dziś!<form><input type=text placeholder="adres e-mail">  <input type=submit value=Dołącz!>
+			</form></div>
+		</div>
+			<!-- Koncowka -->
+			<div id=my-foot><div id=ja >//MADE BY <a href=http://steamcommunity.com/id/onehei>//HEI-HIKO</a></div></div>
+			<div id=pustka>Wszystkie wymienione na tej stronie logotypy należą do swych odpowiednich właścicieli</div>
+
+</div>
+
+
+
+ </div>
+ </div>
+ 
+ <script  type="text/javascript">
+//OBSLUGA MENU
+var checka;
+var checkb;
+function showDiv(a,b) {
+	if(checka==null && checkb==null){
+   document.getElementById(a).style.display = "block";
+   document.getElementById(b).style.backgroundColor = "rgba(255,140,0,0.5)";
+	checka=a;
+	checkb=b;
+ }
+ else{ 	hideDiv(checka,checkb);
+		showDiv(a,b);
+		
+ }
+}
+function hideDiv(a,b) {
+   document.getElementById(a).style.display = "none";
+   document.getElementById(b).style.backgroundColor = "Transparent";
+	checka=null;
+	checkb=null;
+	
+   }
+
+//SLIDER
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+	x[slideIndex-1].style.display = "block";
+	dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+ </div>
+ </body>
+ </html>

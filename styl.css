@@ -1,0 +1,466 @@
+
+@font-face {
+    font-family: "Ubu";
+    src: url("Ubuntu-R.ttf");
+}
+
+html{
+	font-family: "Ubu";
+	color:white;
+	width:100%;
+}
+
+
+#pudelko{
+	margin: 0 auto; 
+	width:90%;
+	text-align:center;
+	background-color:#3a3536;
+	position:relative;
+	z-index:1;
+	
+}
+/*Przezroczysyty pasek na gorze */
+#banner{
+	
+	background-color:rgba(34,31,32,0.8);
+	min-height:10vh;
+	height:10vh;
+	width:100%;
+
+	display:block;
+	position:absolute;
+	z-index:2;
+}
+/*przyciski z menu */
+button {
+	height:10vh;
+	padding: 0 2vh;
+    background-color: Transparent;
+    background-repeat:no-repeat;	
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+	line-height:50px;
+    outline:none;
+	color:white;
+	font-size:2.5vw;
+}
+/*pod menu*/
+.my-bar { 
+	text-align:center;
+	position:absolute;
+	z-index:1;
+	display:none;
+	width:100%;	
+	font-size:2vw;
+	background-color:rgba(34,31,32,0.8);
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	max-width:90%;
+	position:relative;
+    overflow: hidden;
+	display:inline-block;
+    
+}
+li {
+	line-height:50%;
+	height:100%;
+    display: inline-block;
+    color: white;
+	font-size:1.7vw;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li:hover {
+	background-color:rgba(255,140,0,0.5);
+	display:inline-block;
+	height:100%;
+	cursor:pointer;
+}
+/*Logo*/
+#logo{
+	margin-left:1vw;
+	float:left;}
+#logo img{
+	width:10vh;
+	height:10vh;
+}
+#lupa {
+	float:right;
+	display:inline-block;
+	padding:1vh 2vh;
+}
+.fl {	width:8vh;	height:8vh;}
+
+
+.w3-display-right{
+padding-right:1vw;
+}
+
+#cross{	cursor:pointer;z-index:2;}	#cross img{ height:32px;}
+
+#slider  {
+	width:100%;
+	float:left;
+	z-index:0;
+	height:607px;
+	position:absolute;
+	left:0;
+}
+
+/*Zdjecia sa 1080x607(16:9) ale full hd tez przeskoczy */
+.slider-img {
+	display:block;
+	width:100%;
+	object-fit: cover;
+	height: 607px; 
+}
+
+/*opis ktory pokazuje sie na zdjeciach z slidera */
+.w3-display-left{
+	text-align:left;
+	position:absolute;
+	top: 85%;
+	bottom:0;
+	left: 0;
+	right: 0;
+	max-width: 37.5%;
+	z-index:0;
+	height:35%;
+	max-height:50%;
+	bottom:40%;
+	background-color:rgba(34,31,32,0.8);
+}
+/*elementy opisu*/
+#slider-tytul{	font-size:32px;}
+
+#slider-opis{	text-indent:30px;	font-size:12px;	}
+
+#slider-box{
+	z-index:0;
+	width:100%;
+	height:100%;
+	float:left;
+	display:block;
+	}
+
+a{	text-decoration:none;}
+	
+/* sterowanie przewijania sliderem */	
+.mySlides {display:block; width:100%; position:absolute;	transition: opacity .5s ease-in;}
+.w3-left, .w3-right, .w3-badge {cursor:pointer;}
+.w3-badge {height:13px;width:13px;padding:0; position:relative; z-index:1;}
+.w3-display-bottommiddle{top:90%; left:80vw;}
+
+.w3-left, .w3-right{
+	font-size:7vw;
+	opacity:0.6;
+	position:relative;
+	left:0%;top:50%;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* 4x25 hrefy */
+
+
+#bot-img{
+font-size:0;
+	width:25%;
+	height:250px;
+	position: relative;
+	float:left;
+	max-height:250px;
+	text-align:center;	
+	overflow:hidden;
+}
+#bot-img img{
+	padding:0px;
+	border:0px;
+	overflow:hidden;
+	display:block;
+    margin-left: auto;
+	margin-top:auto;
+    margin-right: auto;
+	max-width:100%;
+	height:auto;
+	/*regulacja wielkosci obrazka wewnatrz przegrodki */
+	width:75%;
+	
+}
+
+/* sterowanie overlay */
+#bot-img  :hover  #overlay {opacity:1;		/*background-color:rgba(0, 0, 0, 0.5);*/	background-image:url(bot-img/ovrl.png)}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .9s ease;
+}
+
+#bot-text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 1.4vw;
+  position: absolute;
+  overflow: hidden;
+  top: 45%;
+  left: 50%;
+  max-width:80%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* pasek od ikonek i e-mail */
+#pasek{	
+	background-color:#090909;
+	display:flex;
+	width:100%;
+	height:100px;
+	padding-top:2vh;
+	min-height:100px;
+	position: relative;
+}
+
+/* trzy ikonki po lewej */
+#ic-left{
+	float:left;
+	margin-left:40px;
+}
+#ic-left img{
+	position:relative;
+	width:5vw;
+	height:auto;
+	margin:auto 1vw auto 1vw;
+}
+
+
+
+/* e-mail i ten przycisk */
+#btn-rds {
+
+	float:right;
+	margin-right:0px;
+	background-color:rgba(34,31,32,1);
+	width:40vw;
+	min-width:40vw;
+	font-weight:bold;
+	
+	border-top-left-radius:3vw;
+	display:block;
+	
+	right:0%;bottom:0%;
+	position:absolute;
+}
+
+#btn-rds input{
+	min-height:2vw;
+display:inline-block;
+border-radius:20px;
+width:70%;
+}
+
+#btn-rds input[type="submit"]{
+display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.2vw;
+  padding:0.4vw;
+  width: 20%;
+  cursor: pointer;
+  margin: 5px;
+}
+/*stopka */
+#my-foot{
+	z-index:2;
+	display:inline-block;
+	padding-top:0.5vw;
+	height:8vh;
+	float:left;
+	width:100%;
+	border-bottom-left-radius:100px;
+	border-bottom-right-radius:100px;
+	background-color:rgba(34,31,32,1);
+	}
+	
+#ja{float:right;	text-align:right;	padding-right:10%;}
+#pustka{height:20%;}
+/* ------------------------1.---------------------------------*/
+@media screen and (max-width:1100px)
+{
+.w3-badge{	display:none;}
+
+#bot-img{
+		width:100%;
+	margin-left: auto;
+	margin-top:auto;
+    margin-right: auto;
+
+	height:200px;
+	position: relative;
+	display:block;
+	text-align:center;	
+	overflow:hidden;
+	}
+#bot-img img{
+	width:auto;  
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	margin-top:auto;
+	height:100%;
+	position:absolute;
+
+}
+
+
+#slider{
+	background-color:transparent;
+	
+}
+#pudelko{
+	width:100%;
+	height:auto;
+}
+.w3-display-left{
+	top:67.5%;
+	height:40%;
+	transform:none;
+	max-width:100%;
+}
+
+.fl {
+	padding-top:0.5vh;
+	padding-bottom:0.5vh;
+	height: 6vh;
+	width: auto;
+}
+
+#pasek{	height:35vw; overflow:hidden;
+z-index:0;	width:100%;}
+
+#ic-left{
+	font-size:0px;
+	margin-left:0px;
+	margin-right:0px;
+	display:inline-block;
+	float:left;
+	width:auto;  
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	margin:auto;
+	height:100%;
+	margin-top:0.5vh;
+	padding-top:2vh;
+	position:absolute;
+	overflow:hidden;
+
+}
+
+#ic-left img{ 
+	
+	position:relative;
+
+	width:13vw;
+	height:auto;
+}
+
+#btn-rds{
+	top:50%;
+	border-top-right-radius:3vw;
+	position:relative;
+	width:100%;
+
+
+	padding-bottom:90vw;
+	z-index:1;
+}
+
+#btn-rds input[type="submit"]{
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #f4511e;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 2.4vw;
+	padding: 5px;
+	width: 20%;
+	cursor: pointer;
+	margin: 5px;
+}
+
+#my-foot{
+	position:relative;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius: 0px;
+height:5vw;
+	min-height:6vw;
+}
+
+#ja{font-size:2vw;	padding-bottom:2vw; position:relative;}
+#pustka{display:none;}
+
+.w3-left, .w3-right{font-size:20vw;}
+#bot-text {  font-size: 4.8vw;}
+#cross{padding-right:2vw; height:100%;}
+#cross img{ height:24px;}
+#banner{ min-height:10vh;	height:10vh;	text-align:left;}
+
+li{font-size:2.5vw}	
+button{font-size:3.5vw; padding-right:1vh;	}
+}
+/*----koniec 1.----*/
+/*-----------------------------------2.-------------------------*/
+ @media screen and (orientation:landscape) and (max-width:1100px){
+	 #banner{ min-height:10vh; height:auto;	height:20vh;	text-align:left;}
+	 
+button{font-size:3.5vw; min-height:20vh;}
+	 
+#logo{ margin-left:1vw;		}
+	
+#logo img{	width:20vh;		height:20vh;}
+#bot-img{
+		width:50%;
+height:30vw;}
+.fl {
+	display:block;
+	padding-top:4vh;
+	padding-bottom:4vh;
+	height: 18vh;
+	width: auto;
+}
+	 
+	 .w3-display-left{
+	top:75%;
+	 }
+	 #pasek{ height:30vw;}
+#btn-rds{
+	top:60%;
+	 
+	 
+}/*---- koniec 2. ----*/
